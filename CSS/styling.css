@@ -1,0 +1,136 @@
+/* CSS Elements */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1 {
+  color: hsl(234, 12%, 34%);
+  font-weight: 200;
+  margin: 0;
+}
+
+h3 {
+  color : hsl(234, 12%, 34%);
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-size: 14px;
+  margin-top: 0;
+}
+
+
+/* Main Container & Text Container */
+
+.main-grid {
+  display: grid;
+}
+
+
+/* Text Container */
+
+.text-box {
+  text-align: center;
+  padding: 3% 30% 1%;
+}
+
+.bottom-heading {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.text-p {
+  font-size: 16px;
+}
+
+
+/* Card Container */
+
+.card-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-cards {
+  display: grid;
+}
+
+.card {
+  border-radius: 10px;
+  border-style: none;
+  border-top-style: solid;
+  border-top-width: thick;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 1px 2px 15px grey;
+  width: 290px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-text {
+  text-align: left;
+  padding: 20px;
+}
+
+.card-icon {
+  margin-left: 170px;
+}
+
+
+/* Individual Cards */
+
+.supervisor {
+  border-color: hsl(180, 62%, 55%);
+}
+
+.team-builder {
+  border-color: hsl(0, 78%, 62%);
+}
+
+.karma {
+  border-color: hsl(34, 97%, 64%);
+}
+
+.calculator {
+  border-color: hsl(212, 86%, 64%);
+}
+
+
+
+/* Media Query for Mobile */
+
+@media (max-width: 800px) {
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .text-box {
+    padding: 15% 3%;
+  }
+
+  .card-flex {
+    flex-wrap: wrap;
+  }
+
+  .middle-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .card-icon {
+    margin-left: 70%;
+  }
+
+}
